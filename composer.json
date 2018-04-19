@@ -1,7 +1,7 @@
 {
-	"name": "mediawiki/semantic-media-wiki",
+	"name": "jamesmontalvo3/semantic-media-wiki",
 	"type": "mediawiki-extension",
-	"description": "MediaWiki extension that lets you store and query structured data within wiki pages",
+	"description": "James' test version",
 	"keywords": [
 		"SMW",
 		"Semantic MediaWiki",

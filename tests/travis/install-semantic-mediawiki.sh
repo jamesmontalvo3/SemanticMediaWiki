@@ -22,7 +22,7 @@ function installSmwIntoMwWithComposer {
 	cd $MW_INSTALL_PATH
 
 	installPHPUnitWithComposer
-	composer require mediawiki/semantic-media-wiki "dev-master" --dev
+	composer require jamesmontalvo3/semantic-media-wiki "dev-master" --dev
 
 	cd extensions
 	cd SemanticMediaWiki
@@ -53,7 +53,7 @@ function installSmwAsTarballLikeBuild {
 	echo -e "Running tarball build on $TRAVIS_BRANCH \n"
 
 	cd $MW_INSTALL_PATH/extensions
-	composer create-project mediawiki/semantic-media-wiki SemanticMediaWiki dev-master -s dev --prefer-dist --no-dev
+	composer create-project jamesmontalvo3/semantic-media-wiki SemanticMediaWiki dev-master -s dev --prefer-dist --no-dev
 
 	cd SemanticMediaWiki
 	installPHPUnitWithComposer
